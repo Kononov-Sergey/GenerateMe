@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="h1">GenerateMe</h1>
+    <div class="slider">
+      <section id="1" class="LKG-section">
+        <h2>Линейный конгруэнтный генератор</h2>
+        <form id="LKG_form">
+          <label>
+            a
+            <input name="a" value="16807" type="text" />
+          </label>
+          <label>
+            m
+            <input name="m" value="2^31 - 1" type="text" />
+          </label>
+          <label>
+            c
+            <input name="c" value="0" type="text" />
+          </label>
+          <button type="submit">Построить</button>
+        </form>
+      </section>
+      <section id="2" class="L-section">
+        <h2>Генератор на основе регистра сдвига с обратной линейной связью</h2>
+        <form id="LFSR_form">
+          <label>
+            buffer
+            <input name="0bit" value="1" type="number" min="0" max="1" />
+            <input name="1bit" value="0" type="number" min="0" max="1" />
+            <input name="2bit" value="1" type="number" min="0" max="1" />
+            <input name="3bit" value="1" type="number" min="0" max="1" />
+            <input name="4bit" value="0" type="number" min="0" max="1" />
+            <input name="5bit" value="1" type="number" min="0" max="1" />
+            <input name="6bit" value="0" type="number" min="0" max="1" />
+            <input name="7bit" value="1" type="number" min="0" max="1" />
+            <input name="8bit" value="1" type="number" min="0" max="1" />
+            <input name="9bit" value="0" type="number" min="0" max="1" />
+          </label>
+          <label>
+            links
+            <input name="0link" value="9" type="number" min="0" max="9" />
+            <input name="1link" value="4" type="number" min="0" max="9" />
+            <input name="2link" value="0" type="number" min="0" max="9" />
+          </label>
+        </form>
+      </section>
+      <section id="3" class="MT-section">
+        <h2>
+          Вихрь Мерсе́нна (англ. Mersenne twister, MT) — генератор
+          псевдослучайных чисел, разработанный в 1997 году японскими учёными
+          Макото Мацумото
+        </h2>
+      </section>
+      <span class="next"></span>
+      <span class="prev"></span>
+    </div>
+    <div class="testing-section">
+      <div>
+        <h3>Период:</h3>
+        <p class="period">Считаем...</p>
+      </div>
+      <div>
+        <h3>Коэффициент вариации:</h3>
+        <p class="variation">Считаем...</p>
+      </div>
+    </div>
+    <div class="container container_chart">
+      <canvas id="generatorChart" width="400" height="200"></canvas>
+    </div>
+    <div class="container container_chart">
+      <canvas id="BarChart" width="400" height="200"></canvas>
+    </div>
+
+    <!-- <div class="container">
+      <div class="isLand_sheet"></div>
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

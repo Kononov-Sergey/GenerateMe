@@ -1,0 +1,102 @@
+* {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+.hidden {
+  display: none;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+label {
+  font-weight: bold;
+}
+input {
+  height: 25px;
+  align-items: center;
+  position: relative;
+  border-radius: 8px;
+  font-size: 18px;
+}
+button {
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.h1 {
+  margin-bottom: 4rem;
+}
+.testing-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.container_chart {
+  margin-bottom: 2rem;
+}
+.isLand_sheet {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(50, 10px);
+  grid-template-rows: repeat(50, 10px);
+}
+.isLand_sheet div {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(0, 0, 0);
+}
+.isLand_sheet div.black {
+  background-color: rgb(94, 94, 94);
+}
+form label {
+  margin-right: 1rem;
+}
+.slider {
+  max-width: 90vw;
+  display: flex;
+  position: relative;
+  margin: auto;
+}
+.slider section {
+  object-fit: cover;
+  min-width: 90vw;
+  margin-bottom: 2rem;
+  transition: all 0.4s;
+}
+.prev {
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: 20px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  transform: rotate(135deg);
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.next {
+  content: "";
+  position: absolute;
+  top: 65px;
+  right: 20px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  transform: rotate(-45deg);
+  margin: 5px;
+  cursor: pointer;
+  padding: 10px;
+  height: 0;
+  width: 0;
+}
+
+.MT-section h2 {
+  max-width: 1440px;
+  margin: 0 auto;
+}

@@ -30,6 +30,7 @@ button {
 .h1 {
   margin-bottom: 4rem;
 }
+
 .testing-section {
   display: flex;
   justify-content: center;
@@ -67,6 +68,9 @@ form label {
   margin-bottom: 2rem;
   transition: all 0.4s;
 }
+.slider section input {
+  margin-bottom: 1rem;
+}
 .prev {
   content: "";
   position: absolute;
@@ -99,4 +103,47 @@ form label {
 .MT-section h2 {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .prev,
+  .next {
+    top: 135px;
+  }
+  .prev {
+    left: calc(20vw);
+  }
+  .next {
+    right: calc(20vw);
+  }
+  .slider section {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 915px) {
+  .prev,
+  .next {
+    top: 170px;
+  }
+}
+
+@media (max-width: 520px) {
+  .prev,
+  .next {
+    top: 230px;
+  }
+}
+@media (max-width: 472px) {
+  .prev,
+  .next {
+    top: 260px;
+  }
+}
+
+@media (max-width: 354px) {
+  .prev,
+  .next {
+    top: 330px;
+  }
 }

@@ -127,8 +127,25 @@ form label {
     top: 170px;
   }
 }
-
-@media (max-width: 520px) {
+@media (max-width: 812px) {
+  #LKG_form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 250px;
+  }
+  #LFSR_form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .prev,
+  .next {
+    top: 280px;
+  }
+}
+/* @media (max-width: 520px) {
   .prev,
   .next {
     top: 230px;
@@ -141,9 +158,9 @@ form label {
   }
 }
 
-@media (max-width: 354px) {
+@media (max-width: 356px) {
   .prev,
   .next {
     top: 330px;
   }
-}
+} */
